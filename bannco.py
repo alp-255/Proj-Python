@@ -45,6 +45,7 @@ def novo_cliente(clientes):
 # Função para apagar um cliente
 def apaga_cliente(clientes):
     cpf = input("Informe o CPF do cliente a ser apagado: ")
+    senha = input("Senha: ")
     if cpf in clientes:
         del clientes[cpf]
         salvar_dados(clientes)
